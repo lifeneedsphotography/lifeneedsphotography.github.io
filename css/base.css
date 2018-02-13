@@ -155,9 +155,10 @@ hr.small {
 }
 .intro-header {
   background-color: #808080;
-  background-position: 50% 70%;
+  background-position: 50% 50%;
   background-attachment: scroll;
   margin-bottom: 50px;
+  height: 100vh;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
