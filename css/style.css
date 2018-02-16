@@ -158,26 +158,24 @@ hr.small {
   background-position: 50% 50%;
   background-attachment: scroll;
   margin-bottom: 50px;
-  height: 100vh;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
   color: #fff;
-}
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
+  height: 20vh;
 }
 .intro-header .site-heading.archives,
 .intro-header .post-heading.archives,
 .intro-header .page-heading.archives {
   color: #0085a1;
   margin-top: 60px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    height: 100vh;
+  }
 }
 .intro-header .site-heading,
 .intro-header .page-heading {
@@ -190,11 +188,15 @@ hr.small {
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.1;
   display: block;
   font-weight: 300;
-  margin: 10px 0 0;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
