@@ -29,7 +29,7 @@ h6,
 .btn,
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Microsoft JhengHei, 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 body {
   font-size: 20px;
@@ -162,9 +162,8 @@ hr.small {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 50px;
+  padding: 100px 0 10px;
   color: #fff;
-  height: 20vh;
 }
 .intro-header .site-heading.archives,
 .intro-header .post-heading.archives,
