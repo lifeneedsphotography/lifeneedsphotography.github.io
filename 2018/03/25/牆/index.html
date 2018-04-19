@@ -215,9 +215,7 @@
 </article>
 
     <!-- Footer -->
-    <hr />
-
-<!-- Footer -->
+    <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
@@ -288,20 +286,18 @@
 
 
 
+    <!-- My own animate -->
     <script>
 
-	window.addEventListener("DOMContentLoaded", scrollLoop, false);
-
+	window.addEventListener("scroll", scrollLoop, false);
 	
 	var img = document.querySelector("#cover-img");
-
-	
 	var yScrollPosition;
 
 	function scrollLoop(e)
 	{
 		yScrollPosition = window.scrollY;
-		setTranslate(0, 0.1*yScrollPosition, img);
+		setTranslate(0, 0.15*yScrollPosition, img);
 	}
 
 	function setTranslate(xPos, yPos, el)
@@ -309,10 +305,8 @@
 		el.style.transform = "translate3d(" + xPos +"px, " + yPos + "px, 0)";
 	}
 	
-	
-
-
 </script>
+
 
 </body>
 

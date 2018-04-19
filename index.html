@@ -120,12 +120,14 @@
     <!-- Main Content -->
     <!-- Page Header -->
 <!-- Set your background image for this header in the theme's configuration: index_cover -->
-<header class="intro-header">
+
+
+<header class="intro-header home-page">
     <img src="https://lifeneedsphotography.github.io/img/home-bg.jpg" id="cover-img">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
+                <div class="site-heading home-page">
                     <!--
                     <h1>Life Needs Photography</h1>
                     <hr class="small">
@@ -138,7 +140,7 @@
 </header>
 
 <!-- Main Content -->
-<div class="container" id="goUp">
+<div class="container goUp">
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
             
@@ -218,11 +220,8 @@
 
 
 
-
     <!-- Footer -->
-    <hr />
-
-<!-- Footer -->
+    <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
@@ -293,20 +292,18 @@
 
 
 
+    <!-- My own animate -->
     <script>
 
-	window.addEventListener("DOMContentLoaded", scrollLoop, false);
-
+	window.addEventListener("scroll", scrollLoop, false);
 	
 	var img = document.querySelector("#cover-img");
-
-	
 	var yScrollPosition;
 
 	function scrollLoop(e)
 	{
 		yScrollPosition = window.scrollY;
-		setTranslate(0, 0.1*yScrollPosition, img);
+		setTranslate(0, 0.15*yScrollPosition, img);
 	}
 
 	function setTranslate(xPos, yPos, el)
@@ -314,10 +311,8 @@
 		el.style.transform = "translate3d(" + xPos +"px, " + yPos + "px, 0)";
 	}
 	
-	
-
-
 </script>
+
 
 </body>
 

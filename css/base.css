@@ -170,11 +170,6 @@ hr.small {
   color: #0085a1;
   margin-top: 60px;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading {
-    height: 100vh;
-  }
-}
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
@@ -444,11 +439,21 @@ body {
 }
 .intro-header img {
   position: fixed;
-  top: -10%;
+  bottom: -10%;
 }
-#goUp {
+.goUp {
   padding-top: 50px;
   background-color: #fff;
   width: 100%;
   position: relative;
+}
+footer {
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .home-page {
+    height: 100vh;
+  }
 }
