@@ -157,7 +157,6 @@ hr.small {
   background-color: #808080;
   background-position: 50% 50%;
   background-attachment: scroll;
-  margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -442,6 +441,16 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+.intro-header img {
+  position: fixed;
+  top: -10%;
+}
+#goUp {
+  padding-top: 50px;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
 }
 article .container {
   width: 100%;

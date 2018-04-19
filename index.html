@@ -120,7 +120,8 @@
     <!-- Main Content -->
     <!-- Page Header -->
 <!-- Set your background image for this header in the theme's configuration: index_cover -->
-<header class="intro-header" style="background-image: url('https://lifeneedsphotography.github.io/img/home-bg.jpg')">
+<header class="intro-header">
+    <img src="https://lifeneedsphotography.github.io/img/home-bg.jpg" id="cover-img">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -137,9 +138,9 @@
 </header>
 
 <!-- Main Content -->
-<div class="container">
+<div class="container" id="goUp">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
             
                 <div class="post-preview">
     <a href="/2018/03/25/牆/">
@@ -209,6 +210,12 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
 
 
 
@@ -285,6 +292,32 @@
 </script>
 
 
+
+    <script>
+
+	window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+	
+	var img = document.querySelector("#cover-img");
+
+	
+	var yScrollPosition;
+
+	function scrollLoop(e)
+	{
+		yScrollPosition = window.scrollY;
+		setTranslate(0, 0.1*yScrollPosition, img);
+	}
+
+	function setTranslate(xPos, yPos, el)
+	{
+		el.style.transform = "translate3d(" + xPos +"px, " + yPos + "px, 0)";
+	}
+	
+	
+
+
+</script>
 
 </body>
 

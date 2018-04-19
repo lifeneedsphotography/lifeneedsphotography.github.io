@@ -139,17 +139,17 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
                     <div class="post-preview">
-    <a href="/tags/movie/">
+    <a href="/tags/photography/">
         <h1 class="post-title archive">
-            movie
+            photography
         </h1>
     </a>
 </div>
                 
                     <div class="post-preview">
-    <a href="/tags/photography/">
+    <a href="/tags/movie/">
         <h1 class="post-title archive">
-            photography
+            movie
         </h1>
     </a>
 </div>
@@ -237,6 +237,32 @@
 </script>
 
 
+
+    <script>
+
+	window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+	
+	var img = document.querySelector("#cover-img");
+
+	
+	var yScrollPosition;
+
+	function scrollLoop(e)
+	{
+		yScrollPosition = window.scrollY;
+		setTranslate(0, 0.1*yScrollPosition, img);
+	}
+
+	function setTranslate(xPos, yPos, el)
+	{
+		el.style.transform = "translate3d(" + xPos +"px, " + yPos + "px, 0)";
+	}
+	
+	
+
+
+</script>
 
 </body>
 
