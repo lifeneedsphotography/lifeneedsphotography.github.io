@@ -232,7 +232,7 @@
 
     <!-- Footer -->
     <!-- Footer -->
-<footer>
+<footer  id="upperLayer2">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -302,7 +302,7 @@
 
 
 
-    <!-- My own animate -->
+    <!-- My own animations -->
     <script>
 
 	window.addEventListener("scroll", scrollLoop, false);
@@ -319,6 +319,59 @@
 	function setTranslate(xPos, yPos, el)
 	{
 		el.style.transform = "translate3d(" + xPos +"px, " + yPos + "px, 0)";
+	}
+	
+</script>
+    <script>
+	//	settings-----
+	var duration 	= 1000;
+	var yStart 		= -40;
+	var yEnd		= 0;
+	var time		= 10;		//Smoothness. Closer it gets to zero, smoother it will be.
+	//	-------------
+
+	addEventListener("load", fade_in, false);
+	
+	var subheading = document.getElementsByClassName("home-page-heading")[0];
+	var position = yStart;
+	var opacity = 0;
+	var forStopping;
+
+	function fade_in()
+	{
+		subheading.style.display = "block";
+		subheading.style.opacity = "0";
+		forStopping = setInterval
+		(
+			function()
+			{
+				var unit_move 	= (yEnd - yStart) / (duration / time);
+				var unit_appear = 1 / (duration / time);
+
+				move(subheading, unit_move);
+				appear(subheading, unit_appear);
+
+				if (position >= yEnd)
+				{
+					clearInterval(forStopping);
+					subheading.style.opacity = "1";
+					subheading.style.transform = "translate3d(0,0,0)";
+				}
+			},
+			time
+		);
+	}
+	
+	function move(el, unit_move)
+	{
+		position += unit_move;
+		el.style.transform = "translate3d(0, " + position + "px, 0)";	
+	}
+
+	function appear(el, unit_appear)
+	{
+		opacity += unit_appear;
+		el.style.opacity = "" + opacity;
 	}
 	
 </script>

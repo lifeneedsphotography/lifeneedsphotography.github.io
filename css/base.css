@@ -155,13 +155,13 @@ hr.small {
 }
 .intro-header {
   background-color: #808080;
-  background-position: 50% 50%;
+  background-position: 50% 60%;
   background-attachment: scroll;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 100px 0 10px;
+  padding: 150px 0 80px;
   color: #fff;
 }
 .intro-header .site-heading.archives,
@@ -437,23 +437,30 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
-.intro-header img {
+#cover-img {
+  height: 135vh;
   position: fixed;
   bottom: -10%;
+  left: -9999px;
+  right: -9999px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.goUp {
+#upperLayer1 {
   padding-top: 50px;
   background-color: #fff;
   width: 100%;
   position: relative;
 }
-footer {
+#upperLayer2 {
   background-color: #fff;
   width: 100%;
   position: relative;
 }
-@media only screen and (min-width: 768px) {
-  .home-page {
-    height: 100vh;
-  }
+.home-page,
+.home-page-heading {
+  height: 100vh;
+}
+.home-page-heading {
+  display: none;
 }
